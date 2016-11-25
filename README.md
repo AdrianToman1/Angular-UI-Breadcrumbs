@@ -6,7 +6,7 @@ This directive auto-generates breadcrumbs based on angular-ui-router routes.
 
 ## Demo
 
-You can see a working demo demonstrating most of the features here: [http://plnkr.co/edit/bBgdxgB91Z6323HLWCzF?p=preview](http://plnkr.co/edit/bBgdxgB91Z6323HLWCzF?p=preview)
+You can see a working demo at: [https://plnkr.co/edit/O8wS9OpyPQkj5FxoJEgj?p=preview](https://plnkr.co/edit/O8wS9OpyPQkj5FxoJEgj?p=preview)
 
 ## Requirements
 
