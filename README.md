@@ -29,7 +29,7 @@ Make sure the file `uiBreadcrumbs.js` is being loaded in your app, and that the 
 Declare the dependency in your Angular module:
 
 ```JavaScript
-angular.module('myApp', ['angularUtils.directives.uiBreadcrumbs']);
+angular.module('myApp', ['ui.breadcrumbs']);
 ```
 
 ## Usage
