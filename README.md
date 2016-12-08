@@ -20,7 +20,7 @@ nested views, you should use a named view and refer to it when configuring your 
 ## Installation
 
 ### 1. Download
-Download the files `uiBreadcrumbs.js` and `uiBreadcrumbs.tpl.html`.
+Download the file `uiBreadcrumbs.js`.
 
 ### 2. Include in your app
 
