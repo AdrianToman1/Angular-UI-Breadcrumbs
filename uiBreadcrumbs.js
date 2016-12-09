@@ -13,7 +13,6 @@
      * Config
      */
     var moduleName = 'ui.breadcrumbs';
-    var templateUrl = 'directives/uiBreadcrumbs/uiBreadcrumbs.tpl.html';
 
     /**
      * Module
@@ -29,9 +28,12 @@
     module.directive('uiBreadcrumbs', ['$interpolate', '$state', function($interpolate, $state) {
             return {
                 restrict: 'E',
-                templateUrl: function(elem, attrs) {
-                    return attrs.templateUrl || templateUrl;
-                },
+                template: 
+                    '<ol class="breadcrumb">' +
+                      '<li ng-repeat="crumb in breadcrumbs" ' +
+                          'ng-class="{ active: $last }"><a ui-sref="{{ crumb.route }}" ng-if="!$last">{{ crumb.displayName }}&nbsp;</a><span ng-show="$last">{{ crumb.displayName }}</span>' +
+                      '</li>' +
+                    '</ol>',
                 scope: {
                     displaynameProperty: '@',
                     abstractProxyProperty: '@?'
