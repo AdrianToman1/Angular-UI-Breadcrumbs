@@ -24,7 +24,7 @@ Download the file `uiBreadcrumbs.js`.
 
 ### 2. Include in your app
 
-Make sure the file `uiBreadcrumbs.js` is being loaded in your app, and that the template file is available somewhere (see the next section for how to configure the path to the template).
+Make sure the file `uiBreadcrumbs.js` is being loaded in your app.
 
 Declare the dependency in your Angular module:
 
@@ -38,15 +38,12 @@ Assuming you already have your app configured to use ui-router, you then need to
 
 ```HTML
 <ui-breadcrumbs displayname-property="data.displayName"
-                [template-url=""]
                 [abstract-proxy-property=""]>
 </ui-breadcrumbs>
 ```
 
 * **`displayname-property`** (required) This attribute must point to some property on your state config object that contains the string you wish to display as the
 route's breadcrumb. If none is specified, or if the specified property is not found, the directive will default to displaying the route's name.
-* **`template-url`** (optional) Use this attribute to specify the URL of the `uiBreadcrumbs.tpl.html` file. Alternatively this may be configured in the JavaScript file
-itself, in which case this attribute would not be needed.
 * **`abstract-proxy-property`** (optional) Used when working with abstract states. See the section on working with abstract states below for a full explanation.
 
 ## Example setup
@@ -107,7 +104,6 @@ angular.module('yourModule').config(function($stateProvider) {
 ```
 
 ```html
-// in the app template somewhere
 <ui-breadcrumbs displayname-property="data.displayName"></ui-breadcrumbs>
 <div ui-view="content"></div>
 ```
