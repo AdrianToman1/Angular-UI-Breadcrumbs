@@ -9,26 +9,16 @@
 
 (function() {
 
-    /**
-     * Config
-     */
-    var moduleName = 'ui.breadcrumbs';
+  angular
+    .module('ui.breadcrumbs', ['ui.router'])
+    .directive('uiBreadcrumbs', uiBreadcrumbs);
 
-    /**
-     * Module
-     */
-    var module;
-    try {
-        module = angular.module(moduleName);
-    } catch(err) {
-        // named module does not exist, so create one
-        module = angular.module(moduleName, ['ui.router']);
-    }
+  uiBreadcrumbs.$inject = ['$interpolate', '$state'];
 
-    module.directive('uiBreadcrumbs', ['$interpolate', '$state', function($interpolate, $state) {
+  function uiBreadcrumbs($interpolate, $state) {
             return {
                 restrict: 'E',
-                template: 
+                template:
                     '<ol class="breadcrumb">' +
                       '<li ng-repeat="crumb in breadcrumbs" ' +
                           'ng-class="{ active: $last }"><a ui-sref="{{ crumb.route }}" ng-if="!$last">{{ crumb.displayName }}&nbsp;</a><span ng-show="$last">{{ crumb.displayName }}</span>' +
@@ -176,5 +166,6 @@
                     }
                 }
             };
-        }]);
+        }
+
 })();
