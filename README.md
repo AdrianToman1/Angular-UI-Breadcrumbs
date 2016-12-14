@@ -2,7 +2,8 @@
 
 This directive auto-generates breadcrumbs based on angular-ui-router routes.
 
-**No longer maintained** The [original repo](https://github.com/michaelbromley/angularUtils-uiBreadcrumbs), by @michaelbromley, is no longer being maintained.
+**No longer maintained** The [original repo](https://github.com/michaelbromley/angularUtils/tree/master/src/directives/uiBreadcrumbs
+), by @michaelbromley, is no longer being maintained.
 
 ## Demo
 
