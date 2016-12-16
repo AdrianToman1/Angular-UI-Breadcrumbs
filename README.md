@@ -189,6 +189,13 @@ The directive element would then look like this:
 Now, when we are in the `contacts.detail` state, the breadcrumbs will show the `contacts.list` as the immediate parent,
 rather than the abstract `contacts` state.
 
+## Triggering Update
+It is possible to force breadcrumbs to update without a state change by broadcasting a `updateBreadcrumbsArray` event from the `$rootscope`.
+
+```
+$rootScope.$broadcast('updateBreadcrumbsArray');
+```
+
 ## Styling
 The template structure is based on the [Bootstrap 3 breadcrumbs component](http://getbootstrap.com/components/#breadcrumbs), so it
 includes an `active` class to signify the current (left-most) item in the breadcrumbs list. You can, of course, modify the template as needed
