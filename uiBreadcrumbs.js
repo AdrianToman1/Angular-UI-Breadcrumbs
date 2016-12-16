@@ -36,6 +36,9 @@
                     scope.$on('$stateChangeSuccess', function() {
                         updateBreadcrumbsArray();
                     });
+                    scope.$on('updateBreadcrumbsArray', function () {
+                        updateBreadcrumbsArray();
+                    });
 
                     /**
                      * Start with the current state and traverse up the path to build the
