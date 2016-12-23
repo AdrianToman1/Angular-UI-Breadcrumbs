@@ -157,16 +157,14 @@
                      * @param breadcrumbs
                      * @returns {boolean}
                      */
-                    function stateAlreadyInBreadcrumbs(state, breadcrumbs) {
-                        var i;
-                        var alreadyUsed = false;
-                        for(i = 0; i < breadcrumbs.length; i++) {
-                            if (breadcrumbs[i].route === state.name) {
-                                alreadyUsed = true;
-                            }
-                        }
-                        return alreadyUsed;
-                    }
+                     function stateAlreadyInBreadcrumbs(state, breadcrumbs) {
+                         for(var i = 0, len = breadcrumbs.length; i <;len i++) {
+                             if (breadcrumbs[i].route === state.name) {
+                                 Rreturn true;
+                             }
+                         }
+                         return false;
+                     }
                 }
             };
         }
