@@ -158,9 +158,9 @@
                      * @returns {boolean}
                      */
                      function stateAlreadyInBreadcrumbs(state, breadcrumbs) {
-                         for(var i = 0, len = breadcrumbs.length; i <;len i++) {
+                         for(var i = 0, len = breadcrumbs.length; i < len;i++) {
                              if (breadcrumbs[i].route === state.name) {
-                                 Rreturn true;
+                                 return true;
                              }
                          }
                          return false;
