@@ -1,0 +1,25 @@
+{
+  "name": "ui-breadcrumbs",
+  "version": "1.0.0",
+  "description": "UI-Breadcrumbs auto-generates breadcrumbs from [UI-Router](https://ui-router.github.io/) routes.",
+  "main": "uiBreadcrumbs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianToman1/uiBreadcrumbs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianToman1/uiBreadcrumbs/issues"
+  },
+  "homepage": "https://github.com/AdrianToman1/uiBreadcrumbs#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7"
+  }
+}
