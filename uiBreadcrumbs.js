@@ -135,11 +135,10 @@
                      * @returns {*}
                      */
                     function getObjectValue(objectPath, context) {
-                        var i;
                         var propertyArray = objectPath.split('.');
                         var propertyReference = context;
 
-                        for (i = 0; i < propertyArray.length; i ++) {
+                        for (var i = 0, len = propertyArray.length; i < len; i ++) {
                             if (angular.isDefined(propertyReference[propertyArray[i]])) {
                                 propertyReference = propertyReference[propertyArray[i]];
                             } else {
