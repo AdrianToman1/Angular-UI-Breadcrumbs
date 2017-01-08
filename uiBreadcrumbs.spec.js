@@ -9,8 +9,7 @@ describe('uiBreadcrumbs directive', function() {
     var element;
     var $state;
 
-    beforeEach(module('angularUtils.directives.uiBreadcrumbs'));
-    beforeEach(module('templates-main'));
+    beforeEach(module('ui.breadcrumbs'));
 
     beforeEach(function() {
         var mockModule = angular.module('mockModule', [])
