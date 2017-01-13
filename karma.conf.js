@@ -15,9 +15,9 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'libs/angular.js',
-      'libs/angular-ui-router.js',
-      'libs/angular-mocks.js',
+      'libs/angular/1.6.1/angular.js',
+      'libs/angular/1.6.1/angular-mocks.js',
+      'libs/ui-router/0.3.2/angular-ui-router.js',
       'uiBreadcrumbs.js',
       'uiBreadcrumbs.spec.js'
     ],
