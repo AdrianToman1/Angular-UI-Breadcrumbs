@@ -131,12 +131,12 @@
                      * value found at that path.
                      *
                      * @param objectPath
-                     * @param context
+                     * @param currentState
                      * @returns {*}
                      */
-                    function getObjectValue(objectPath, context) {
+                    function getObjectValue(objectPath, currentState) {
                         var propertyArray = objectPath.split('.');
-                        var propertyReference = context;
+                        var propertyReference = currentState;
 
                         for (var i = 0, len = propertyArray.length; i < len; i ++) {
                             if (angular.isDefined(propertyReference[propertyArray[i]])) {
