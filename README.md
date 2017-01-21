@@ -1,6 +1,6 @@
-# uiBreadcrumbs Directive
+# Angular UI-Breadcrumbs
 
-UI-Breadcrumbs auto-generates breadcrumbs from [UI-Router](https://ui-router.github.io/) routes.
+Angular UI-Breadcrumbs auto-generates breadcrumbs from [UI-Router](https://ui-router.github.io/) routes.
 
 This repository has been forked from the [original repo](https://github.com/michaelbromley/angularUtils/tree/master/src/directives/uiBreadcrumbs
 ) by @michaelbromley, which is no longer being maintained.
@@ -211,3 +211,9 @@ I used some ideas and approaches from the following sources:
 
 - [http://stackoverflow.com/a/22263990/772859](http://stackoverflow.com/a/22263990/772859)
 - [http://milestone.topics.it/2014/03/angularjs-ui-router-and-breadcrumbs.html](http://milestone.topics.it/2014/03/angularjs-ui-router-and-breadcrumbs.html)
+
+## License
+
+MIT license.
+
+The original code was provided under the MIT license.
