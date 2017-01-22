@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [
       'libs/angular/1.6.1/angular.js',
       'libs/angular/1.6.1/angular-mocks.js',
-      'libs/ui-router/0.3.2/angular-ui-router.js',
+      'libs/ui-router/0.4.0/angular-ui-router.js',
       'uiBreadcrumbs.js',
       'uiBreadcrumbs.spec.js'
     ],
