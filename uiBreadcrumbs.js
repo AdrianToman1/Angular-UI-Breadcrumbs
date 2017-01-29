@@ -1,11 +1,12 @@
 /**
- * uiBreadcrumbs automatic breadcrumbs directive for AngularJS & Angular ui-router.
- *
- * https://github.com/michaelbromley/angularUtils/tree/master/src/directives/uiBreadcrumbs
- *
- * Copyright 2014 Michael Bromley <michael@michaelbromley.co.uk>
+ * @file uiBreadcrumbs automatic breadcrumbs directive for AngularJS & Angular ui-router.
+ * @see {@link https://github.com/AdrianToman1/Angular-UI-Breadcrumbs}
+ * @author Michael Bromley <michael@michaelbromley.co.uk>
+ * @author Adrian Toman <adrian@adriantoman.com.au>
+ * @copyright Original work Copyright 2014 Michael Bromley <michael@michaelbromley.co.uk>
+ * @copyright Modified work Adrian Toman 2017
+ * @license MIT
  */
-
 
 (function() {
 
