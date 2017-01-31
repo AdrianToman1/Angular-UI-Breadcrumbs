@@ -1,4 +1,5 @@
 /**
+ * @file Angular UI-Bredcrumbs is an Angular 1 directive that auto-generates breadcrumbs from UI-Router routes.
  * @see {@link https://github.com/AdrianToman1/Angular-UI-Breadcrumbs}
  * @author Michael Bromley <michael@michaelbromley.co.uk>
  * @author Adrian Toman <adrian@adriantoman.com.au>
