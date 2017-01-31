@@ -1,5 +1,4 @@
 /**
- * @file uiBreadcrumbs automatic breadcrumbs directive for AngularJS & Angular ui-router.
  * @see {@link https://github.com/AdrianToman1/Angular-UI-Breadcrumbs}
  * @author Michael Bromley <michael@michaelbromley.co.uk>
  * @author Adrian Toman <adrian@adriantoman.com.au>
