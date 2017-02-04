@@ -10,6 +10,21 @@
 
 (function() {
 
+  /**
+   * @ngdoc directive
+   * @name ui.breadcrumbs.uiBreadcrumbs
+   * @restrict E
+   * @scope
+   * @param {String=} displaynameProperty This is the parameter1 description. This is an optional parameter
+   * @param {String=} abstractProxyProperty This is the parameter2 description. This is an optional parameter
+   *
+   * @description
+   * Automatially generates breadcrumbs from UI-Router routes.
+   *
+   * @example
+     <ui-breadcrumbs>
+     </ui-breadcrumbs>
+   */
   angular
     .module('ui.breadcrumbs', ['ui.router'])
     .directive('uiBreadcrumbs', uiBreadcrumbs);
@@ -42,6 +57,10 @@
                     });
 
                     /**
+                     * @ngdoc method
+                     * @name updateBreadcrumbsArray
+                     * @methodOf ui.breadcrumbs.uiBreadcrumbs
+                     * @description
                      * Start with the current state and traverse up the path to build the
                      * array of breadcrumbs that can be used in an ng-repeat in the template.
                      */
@@ -70,6 +89,10 @@
                     }
 
                     /**
+                     * @ngdoc method
+                     * @name getWorkingState
+                     * @methodOf ui.breadcrumbs.uiBreadcrumbs
+                     * @description
                      * Get the state to put in the breadcrumbs array, taking into account that if the current state is abstract,
                      * we need to either substitute it with the state named in the `scope.abstractProxyProperty` property, or
                      * set it to `false` which means this breadcrumb level will be skipped entirely.
@@ -98,6 +121,10 @@
                     }
 
                     /**
+                     * @ngdoc method
+                     * @name getDisplayName
+                     * @methodOf ui.breadcrumbs.uiBreadcrumbs
+                     * @description
                      * Resolve the displayName of the specified state. Take the property specified by the `displayname-property`
                      * attribute and look up the corresponding property on the state's config object. The specified string can be interpolated against any resolved
                      * properties on the state config object, by using the usual {{ }} syntax.
@@ -128,6 +155,10 @@
                     }
 
                     /**
+                     * @ngdoc method
+                     * @name getObjectValue
+                     * @methodOf ui.breadcrumbs.uiBreadcrumbs
+                     * @description
                      * Given a string of the type 'object.property.property', traverse the given context (eg the current $state object) and return the
                      * value found at that path.
                      *
@@ -151,6 +182,10 @@
                     }
 
                     /**
+                     * @ngdoc method
+                     * @name stateAlreadyInBreadcrumbs
+                     * @methodOf ui.breadcrumbs.uiBreadcrumbs
+                     * @description
                      * Check whether the current `state` has already appeared in the current breadcrumbs array. This check is necessary
                      * when using abstract states that might specify a proxy that is already there in the breadcrumbs.
                      * @param state
