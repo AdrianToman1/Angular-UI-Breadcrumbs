@@ -1,7 +1,7 @@
 {
   "name": "Angular-UI-Breadcrumbs",
   "version": "1.0.0",
-  "description": "Angular UI-Breadcrumbs auto-generates breadcrumbs from [UI-Router](https://ui-router.github.io/) routes.",
+  "description": "Angular UI-Bredcrumbs is an Angular 1 directive that auto-generates breadcrumbs from [UI-Router](https://ui-router.github.io/) routes.",
   "main": "uiBreadcrumbs.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
